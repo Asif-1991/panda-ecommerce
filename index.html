@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda eCommerce</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header id="home" class="container">
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -19,25 +20,25 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide panda-slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-success"></li>
                 <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active bg-success"></li>
@@ -45,7 +46,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="row align-items-center p-2">
+                    <div class="row align-items-center p-5">
                         <div class="col-7 pt-5">
                             <h1>Mega LCD TV For Sports </h1>
                             <p> This is the best tv in the world for people who just want to waste time in front of tv.
@@ -59,7 +60,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="row row align-items-center p-2">
+                    <div class="row row align-items-center p-5">
                         <div class="col-7">
                             <h1>Cool Dude Headphone </h1>
                             <p> This is the best headphone in the world for people who just want to waste time in front
@@ -73,7 +74,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="row row align-items-center p-2">
+                    <div class="row row align-items-center p-5">
                         <div class="col-7">
                             <h1>X-Box for your living room </h1>
                             <p>This is the best x-box in the world for people who just want to waste time in front</p>
@@ -98,7 +99,7 @@
 
     <main>
         <section class="container overflow-hidden">
-            <div class="row gx-5 pt-5 pb-5">
+            <div class="row g-5 pt-5 pb-5 catagories">
                 <div class="col">
                     <div class="rounded bg-warning d-flex align-items-center text-white justify-content-around">
                         <h1>Watch</h1>
@@ -120,11 +121,11 @@
             </div>
         </section>
 
-        <section class>
+        <section id="shoes" class="container">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4 container">
                 <div class="col">
-                    <div class="card h-100 shadow justify-content-around">
+                    <div class="card panda-card h-100 shadow justify-content-around">
                         <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Red Airmax</h5>
@@ -132,13 +133,13 @@
                                 additional content. This card has even longer content than the first to show .</p>
                             <h3>$200</h3>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Buy Now >></a>
+                        <div class="card-footer panda-card-footer">
+                            <a href="#" class="btn btn-success">Buy Now >></a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow justify-content-around">
+                    <div class="card panda-card h-100 shadow justify-content-around">
                         <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Nike 360</h5>
@@ -147,13 +148,13 @@
                                 show </p>
                             <h3>$250</h3>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Buy Now >></a>
+                        <div class="card-footer panda-card-footer">
+                            <a href="#" class="btn btn-success">Buy Now >></a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow justify-content-around">
+                    <div class="card panda-card h-100 shadow justify-content-around">
                         <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Supply 350</h5>
@@ -161,19 +162,19 @@
                                 additional content. This content is a little bit longer.</p>
                             <h3>$300</h3>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Buy Now >></a>
+                        <div class="card-footer panda-card-footer">
+                            <a href="#" class="btn btn-success">Buy Now >></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="backpack" class="container">
             <h2 class="pt-5">Backpack</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4 container">
                 <div class="col">
-                    <div class="card h-100 shadow justify-content-around">
+                    <div class="card panda-card h-100 shadow justify-content-around">
                         <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Red Airmax</h5>
@@ -181,13 +182,13 @@
                                 additional content. This card has even longer content than the first to show .</p>
                             <h3>$200</h3>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Buy Now >></a>
+                        <div class="card-footer panda-card-footer">
+                            <a href="#" class="btn btn-success">Buy Now >></a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow justify-content-around">
+                    <div class="card panda-card h-100 shadow justify-content-around">
                         <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Nike 360</h5>
@@ -196,13 +197,13 @@
                                 show </p>
                             <h3>$250</h3>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Buy Now >></a>
+                        <div class="card-footer panda-card-footer">
+                            <a href="#" class="btn btn-success">Buy Now >></a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow justify-content-around">
+                    <div class="card panda-card h-100 shadow justify-content-around">
                         <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Supply 350</h5>
@@ -210,22 +211,25 @@
                                 additional content. This content is a little bit longer.</p>
                             <h3>$300</h3>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Buy Now >></a>
+                        <div class="card-footer panda-card-footer">
+                            <a href="#" class="btn btn-success">Buy Now >></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section style="height: 300px;" class="bg-info mt-5 container d-flex align-items-center justify-content-center ">
+        <section id="subscribe" style="height: 300px" class="container bg-info mt-5 d-flex align-items-center justify-content-center">
             <div>
                 <h1>LET'S STAY IN TOUCH</h1>
                 <h5>Get updates on sales, specials and more</h5>
                 <input type="text" placeholder="Enter your email address">
-                <button class="btn btn-primary">SUBMIT</button>
+                <button class="btn btn-success">SUBMIT</button>
             </div>
         </section>
     </main>
+    <footer class="text-center pt-5">
+        <small>©2025. Panda eCommerce. All rights reserved. Asif, Bangladesh.</small>
+    </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
